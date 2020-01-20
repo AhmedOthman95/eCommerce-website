@@ -1,0 +1,493 @@
+/* Start main rules */
+	body {
+		background-color: #F4F4F4;
+		font-size: 16px;
+		font-family: 'Source Sans Pro', Sans-Serif;
+
+	}
+	h1 {
+		font-size: 55px;
+		margin: 40px 0;
+		font-weight: bold;
+		color: #888;
+		font-family: 'Playfair Display', Serif;
+
+	}
+	a {
+		font-family: 'Playfair Display', Serif;
+		font-weight: bold;
+	}
+	p {
+		font-family: 'Playfair Display', Serif;
+		font-weight: bold;
+		font-size: 18px;
+	}
+	.input-container {
+		position: relative;
+	}
+	.asterisk {
+	    font-size: 30px;
+	    position: absolute;
+	    right: 20px;
+	    top: 2px;
+	    color: red;
+	    font-family: Arial;
+	}
+	.show-pass {
+		position: absolute;
+		top: 12px;
+		right: 5px;
+	}
+	.nice-message {
+		padding: 30px;
+		margin: 10px 0;
+		background-color: #FFF;
+		border-left: 10px solid #080;
+		text-align: center;
+		font-size: 30px;
+		font-weight: bold;
+		color: #979393;
+	}
+	.custom-hr {
+		border-top: 1px solid #c9c9c9;
+	}
+	hr:last-of-type {
+	display: none;
+	}
+	.profile-image {
+		width: 250px;
+		height: 200px;
+	}
+	.footer {
+		text-align: center;
+		background-color: #343a40;
+		padding: 10px;
+		margin-bottom: 0;
+		margin-top: 20px;
+
+	}
+	.footer p {
+		margin: 0;
+		color: #FFF;
+	}
+
+
+/* End main rules */
+
+
+/* Start Bootstrap Edits */
+.navbar-brand {
+	font-size: 1.5em;
+	color: rgb(255,255,255,0.5) !important;
+	
+}
+.navbar-brand:hover {
+	color: rgb(255,255,255,0.75) !important;
+}
+.navbar-dark {
+	text-align: center;
+}
+.navbar-dark  button.navbar-toggler {
+    outline: none;
+    border: none;
+}
+.navbar-dark .navbar-nav .nav-link {
+	font-size: 1.1em;
+}
+.navbar-dark .navbar-nav .active>.nav-link,
+.navbar-dark .navbar-nav .nav-link.active,
+.navbar-dark .navbar-nav .nav-link.show,
+.navbar-dark .navbar-nav .show>.nav-link,
+.dropdown-menu {
+	background-color: #54595d;
+} 
+.dropdown-menu {
+	min-width: 200px;
+	border: none;
+	border-radius: 0;
+	margin: 0;
+	padding: 0;
+	font-size: 1em;
+	
+}
+.navbar-nav .cat-link {
+	color: rgb(255,255,255,0.5) !important;	
+	text-decoration: none;
+}
+.navbar-nav .cat-link:hover {
+	color: rgb(255,255,255,0.75) !important;
+}
+.dropdown-item {
+	color: #fff;
+	padding: 10px 15px;
+
+}
+.dropdown-item:hover {
+	background-color: #aab5be;
+}
+.form-control {
+	position: relative;
+}
+.custom-file-label {
+	margin: 0 14px;
+}
+/* End Bootstrap Edits */
+
+/* Start Header */
+.upper-bar {
+	padding: 10px;
+	background-color: #F4F4F4;
+
+	
+}
+.upper-bar .login {
+	color: #00559d;
+    font-weight: bold;
+    font-size: 20px;
+}
+.upper-bar .login:hover {
+	color: #077cdf;
+}
+.upper-bar .profile-image {
+	width: 55px;
+	height: 55px;
+}
+.upper-bar .my-image{
+	width: 35px;
+	height: 35px;
+}
+.my-info .dropdown-menu {
+	background-color: #54595d;
+	
+}
+.my-info .dropdown-menu a{
+	color: #fff;
+	font-weight: bold;
+	font-size: 18px;
+}
+.my-info .dropdown-menu .dropdown-item:hover {
+	background-color: #727678;
+	color: #F4F4F4;
+	
+}
+.my-info span {
+	font-weight: bold;
+	font-size: 18px;
+	color: #888;
+}
+
+/* End Header */ 
+
+/* Start Home Page */
+.show-all .show-all-row {
+	margin-top: 20px;
+	margin-bottom: 20px;
+
+}
+.show-all-col {
+	margin-right: 10px;
+}
+/* End Home Page */
+
+/* Start Login Page */
+.login-page form {
+		max-width: 380px;
+		margin: auto;
+	}
+.login-page form input {
+	margin-bottom: 10px;
+}
+.login-page .log.selected {
+	color: #007bff;
+}
+.login-page .sign.selected {
+	color: #28a745;
+}
+.login-page h1 {
+	color: #C0C0C0;
+}
+.login-page h1 span {
+	cursor: pointer;
+}
+.login-page .signup {
+	display: none;
+}
+.input-container .show-pass {
+	position: absolute;
+	top: 12px;
+	right: -25px;	
+}
+/* End Login Page */
+
+/* Start Categories Page */
+.item-box {
+	position: relative;
+	background-color: #5e6b78;
+	width: 250px;
+
+}
+.item-box .price-tag {
+	background-color: #5e6b78;
+	padding: 2px 10px;
+	position: absolute;
+	left: 0;
+	top: 10px;
+	font-weight: bold;
+	color: #FFF;
+}
+.figure {
+	margin: 10px 10px 10px 10px;
+	height: 400px;
+	
+}
+.item-box .figure-caption h3,
+.item-box .figure-caption p {
+	padding: 5px 15px;
+}
+/* End Categories Page */ 
+
+/* Start Profile Page */
+.card {
+	border: 1px solid #007bff;
+}
+.block {
+	margin: 20px 0 0;
+}
+.my-comments {
+	margin-bottom: 20px;
+}
+.information ul {
+	padding: 0;
+	margin: 0
+}
+.information ul li {
+	padding: 7px;
+}
+.information ul li:nth-child(odd) {
+	background-color: #EEE;
+}
+.information ul li span {
+	display: inline-block;
+	width: 120px;
+}
+.information .btn {
+	margin-top: 15px;
+}
+.date {
+	font-size: 13px;
+	color: #AAA;
+	font-weight: bold;
+	padding-left: 15px;
+}
+.user-item .edit-item {
+	margin-left: 10px;
+	margin-bottom: 10px;
+}
+.item-box .approve-status {
+	position: absolute;
+	top: 40px;
+	left: 0;
+	background-color: #b85a5a;
+	color: #FFF;
+	padding: 3px 5px;
+}
+
+.item-box .date {
+	margin-bottom: 20px;
+	color: #d3d6d9;
+}
+.figure-caption h3 {
+	display: block;
+	height: 70px;
+}
+.figure-caption h3 > a {
+	text-decoration: none;
+	color: #FFF;
+}
+.item-box .figure-caption p {
+	height: 70px;
+	max-height: 70px;
+	color: #FFF;
+	font-size: 18px;
+}
+	.show-all .show-all-row .link a {
+		margin-left: 10px;
+	}
+
+
+/* End Profile Page */
+/* Start Public Profile Page */
+.img-container {
+	margin-bottom: 20px;
+}
+.img-container .profile-image {
+	width: 170px;
+	height: 150px;
+}
+.item-name {
+	margin-top: 30px;
+}
+/* End Public Profile Page */
+/* Start newad Page */
+.create-ad.block {
+	margin: 20px 0 40px;
+}
+.create-ad .item-box {
+	background-color: #FFF;
+}
+.create-ad .item-box h3 {
+	display: block;
+}
+.create-ad .item-box .figure-caption p {
+	color: #6c757d;
+
+}
+
+/* End newad Page */
+
+/* Start Show Item Page */
+.item-info {
+
+}
+.item-info h2 {
+
+	color: #888;
+} 
+.item-info p {
+	
+
+}
+.item-info ul {
+	padding: 0;
+	margin: 0
+}
+.item-info ul li {
+	padding: 10px;
+}
+.item-info ul li:nth-child(odd) {
+	background-color: #e8e8e8;
+}
+.item-info ul li span {
+	display: inline-block;
+	width: 120px;
+}
+
+.tags-items a {
+	display: inline-block;
+	padding: 2px 10px;
+	background-color: #e2e2e2;
+	border-radius: 5px;
+	color: #666;
+	margin-right: 5px;
+}
+
+.add-comment {
+	margin-bottom: 20px;
+}
+.add-comment h3 {
+	margin: 0 0 10px;
+	color: #888;
+
+}
+.add-comment textarea {
+	display: block;
+	margin-bottom: 10px;
+	width: 500px;
+	height: 120px;
+}
+
+.comment-box {
+	margin-bottom: 20px;
+}
+.comment-box img {
+	max-width: 100px;
+	margin-bottom: 10px;
+}
+.comment-box p {
+	background-color: #e0e0e0;
+	position: relative;
+	padding: 10px;
+	margin-top: 20px;
+}
+/* Make The row to point to the user that write the comment */
+.comment-box p:before {
+	content: '';
+	width: 0;
+	height: 0;
+	position: absolute;
+	border-width: 15px;
+	border-style: solid;
+	border-color: transparent #e0e0e0 transparent transparent;
+	top: 8px;
+	left: -28px;
+
+}
+
+
+/* End Show Item Page*/
+
+/* Start Media Query Code */
+@media only screen and (max-width: 600px) {
+	.dropdown-item,
+	.navbar-dark .navbar-nav .nav-link{
+		text-align: center;
+
+	}
+	.show-all .show-all-row {
+		justify-content: center;
+	}
+	.show-all .show-all-row .link a {
+		margin-left: 10px;
+	}
+	.show-all .show-all-row.small {
+	
+	margin-bottom: 0;
+	margin-top: 0;
+}
+	
+	.item-show .item-center .items-show {
+		text-align: center;
+
+		
+	}
+	.item-show .item-center .items-show .figure-caption h3,
+	.item-show .item-center .items-show .figure-caption .date {
+		text-align: left;
+	}
+	.item-show .item-center .items-show .figure-caption p {
+		text-align: left;
+	}
+	.item-show .add-comment {
+		margin-left: 5px;
+		text-align: center;
+
+	}
+	}
+	.item-show .add-comment form textarea {
+		width: 460px;
+	}
+	.create-ad .card-body .col-lg-4 {
+		text-align: center;
+	}
+
+	
+	
+}
+@media only screen and (max-width: 992px) {
+		.item-show .item-center .items-show {
+		text-align: center;
+		
+	}
+		
+	.item-show .item-center .items-show .figure-caption h3,
+	.item-show .item-center .items-show .figure-caption .date {
+		text-align: left;
+	}
+	.item-show .item-center .items-show .figure-caption p {
+		text-align: left;
+	}
+
+
+}
+
+/* End Media Query Code */

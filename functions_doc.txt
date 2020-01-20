@@ -1,0 +1,69 @@
+========================
+== Functions Document ==
+========================
+/*
+** getAllFrom() Function
+** This Function Return Record From A Database
+*/
+function getAllFrom($field, $table, $where = NULL, $and = NULL, $orderField, $ordering = 'DESC' ) {
+	global $conn;
+
+	$getAll = $conn->prepare("SELECT $field FROM $table $where $and ORDER BY $orderField $ordering ");
+	$getAll->execute();
+	$rows = $getAll->fetchAll();
+
+	return $rows;
+}
+
+/*
+** checkItem() Function
+** This Function Check If Item Exist In Database
+*/
+	function checkItem($select, $from, $value){
+		global $conn;
+		$statement = $conn->prepare("SELECT $select FROM $from WHERE $select = ? ");
+		$statement->execute(array($value));
+		$count = $statement->rowCount();
+
+		return $count;
+	}
+ /*
+ ** getTitle() Function
+ ** Echo The Page Title if the page has a variable $pageTitle else it print default
+ */
+ 	function getTitle() {
+		global $pageTitle;
+
+		if (isset($pageTitle)) {
+			
+			echo $pageTitle;
+		} else {
+			echo "Default";
+		}
+	}
+
+	/*
+	** redirectHome() Function
+	** To redirect User To home Page When There Is An Error In Accessing  A Page
+	*/
+		function redirectHome($msg, $seconds = 3, $url = null) {
+
+		if ($url === null) {
+			$url = 'index.php';
+			$link = 'Home Page';
+		} else {
+			if (isset($_SERVER['HTTP_REFERER']) && $_SERVER['HTTP_REFERER'] !== '') {
+					$url = $_SERVER['HTTP_REFERER'];
+					$link = 'Previos Page';
+			}else {
+				$url = "index.php";
+				$link = 'Home Page';
+			}
+			
+		}
+		echo $msg;
+		echo "<div class='alert alert-info'>You Will Be Directed To $link  After $seconds seconds.</div>";
+
+		header("refresh:$seconds;url=$url");
+		exit();
+	}

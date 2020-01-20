@@ -1,0 +1,26 @@
+## $noNavbar : if this variable exist in a page, This means that the int.php page will not include the navbar in that page
+## so we put that variable in the pages that will not have a navbar 
+## $pageTitle : used in functions.php by getTitle() function to set the title of the page 
+
+## redirectHome() function in functions.php file is used to redirect user to home page if he want to access unallowed page
+## redirectHome($msg, $seconds=3, $url=null){} // Take The message to print and the time before redirection and url of directed page
+
+## checkItem() function in functions.php used to check if item exist in database using Select Statement
+## checkItem($select, $from, $value)
+## $select = The item to select
+## $from = The name of the table
+## $value = The value of select in the Where Clause
+
+
+## countItems() function in functions.php file is used to return number of records of an item in the database
+## For Example, It is used to return totla number of members in the databse
+## countItem($item, $table)
+## $item = The item which we want to count
+## $table = The table that contain the item
+
+## getLatest() Function in functions.php file is used to get latest registered Members Or last Items Or last comments
+## getLatest($select, $table, $order,$limit = 5)
+## $select = Field To Select
+## $table = Table To Select From
+## $order = Used To Order The Result Of Select Statament
+## $limit = Number Of Records To get

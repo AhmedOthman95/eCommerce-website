@@ -130,7 +130,7 @@
 					<?php foreach ($comments as $comment) { ?>
 						<div class="comment-box">
 							<div class='row'>
-								<div class='col-sm-2 text-center item-name'>
+								<div class='col-md-2 text-center item-name'>
 									<?php
 									if (empty($comment['Image'])){
 											echo "<img class='img-fluid rounded-circle img-thumbnail d-block mx-auto' src='admin/uploads/avatars/image.png' alt='' />";
@@ -140,7 +140,7 @@
 									echo  $comment['Name'] 
 									?>
 								</div>
-								<div class='col-sm-10'>
+								<div class='col-md-10'>
 									<p class="lead"><?php echo  $comment['Comment'] ?></p>
 								</div>
 							</div>

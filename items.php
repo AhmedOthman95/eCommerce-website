@@ -93,7 +93,7 @@
 						<span>Added By</span> : <a href="publicProfile.php?name=<?php echo $item['Username']; ?>"><?php echo $item['Username']; ?></a>
 					</li>
 					<li class="tags-items">
-						<i class="fas fa-user fa-fw"></i>
+						<i class="fas fa-tags fa-fw"></i>
 						<span>Tags</span> :
 						<?php
 							$allTags = explode(",", $item['tags']);
@@ -181,7 +181,7 @@
 		<?php foreach ($comments as $comment) { ?>
 			<div class="comment-box">
 				<div class='row'>
-					<div class='col-sm-2 text-center'>
+					<div class='col-md-2 text-center'>
 						<?php
 						if (empty($comment['avatar'])){
 								echo "<img class='img-fluid rounded-circle img-thumbnail d-block mx-auto' src='admin/uploads/avatars/image.png' alt='' />";
@@ -191,7 +191,7 @@
 						 echo  $comment['Username'] 
 						?>
 					</div>
-					<div class='col-sm-10'>
+					<div class='col-md-10'>
 						<p class="lead"><?php echo  $comment['Comment'] ?></p>
 					</div>
 				</div>
